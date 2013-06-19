@@ -13,6 +13,14 @@
 #include <math.h>
 #include <string.h>
 
+#define DEBUG
+
+#if defined(ONLINE_JUDGE) || !defined(DEBUG)
+#define D(...)
+#else
+#define D printf
+#endif
+
 using namespace std;
 
 int main() {
