@@ -5,6 +5,7 @@
 #include <map>
 #include <sstream>
 #include <algorithm>
+#include <queue>
 
 #include <strings.h>
 #include <stdio.h>
