@@ -14,8 +14,6 @@
 #include <string.h>
 #include <assert.h>
 
-#define DEBUG
-
 #if defined(ONLINE_JUDGE) || !defined(DEBUG)
 #define D(...)
 #else
