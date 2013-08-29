@@ -13,6 +13,7 @@
 #include <math.h>
 #include <string.h>
 #include <assert.h>
+#include <limits.h>
 
 #if defined(ONLINE_JUDGE) || !defined(DEBUG)
 #define D(...)
