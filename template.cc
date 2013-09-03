@@ -18,7 +18,7 @@
 #if defined(ONLINE_JUDGE) || !defined(DEBUG)
 #define D(...)
 #else
-#define D printf
+#define D(s, ...) fprintf(stderr, s, ##__VA_ARGS__)
 #endif
 
 using namespace std;
