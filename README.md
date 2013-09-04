@@ -5,5 +5,5 @@ Not all source codes of the problems that I have solved are here though.
 
 Please use the source codes for learning purpose only. Don't use them as your own solutions.
 
-https://travis-ci.org/fajran/uva-online-judge.png?branch=master
+[![Build Status](https://travis-ci.org/fajran/uva-online-judge.png?branch=master)](https://travis-ci.org/fajran/uva-online-judge)
 
