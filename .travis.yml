@@ -1,0 +1,8 @@
+language: cpp
+compiler:
+- gcc
+- clang
+install:
+- sudo apt-get install -qq -y time
+script:
+- ./test-all.sh
