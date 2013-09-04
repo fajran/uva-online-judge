@@ -32,7 +32,7 @@ check() {
     return 2
   fi
 
-  ret=0
+  ok=0
   for src in $srcs
   do
     echo "> $src"
@@ -43,20 +43,21 @@ check() {
       diff output.txt .cmp-output.txt > /dev/null 2>&1
       if [ $? -ne 0 ]; then
         echo -e "  ${IRed}E: Invalid result${Color_Off}"
-        ret=3
       else
         echo -e "  ${IGreen}OK${Color_Off}"
+        ok=1
       fi
     else
       echo -e "  ${IRed}E: Compile error${Color_Off}"
-      ret=3
     fi
     echo
   done
 
   popd > /dev/null 2>&1
 
-  return $ret
+  if [ $ok -eq 0 ]; then
+    return 3
+  fi
 }
 
 find . -type d -not -iwholename '*.git*' | while read dir
